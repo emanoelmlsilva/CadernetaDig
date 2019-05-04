@@ -1,0 +1,6 @@
+<resources>
+
+    <style name="materialDesign.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="materialDesign.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

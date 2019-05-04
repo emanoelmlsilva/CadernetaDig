@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Novo" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="android:colorForeground">@android:color/background_light</item>
+        <item name="colorPrimary">@android:color/background_dark</item>
+        <item name="android:colorPrimaryDark">@color/cor_padrao_bar</item>
+        <item name="android:colorPrimary">@color/cor_padrao_bar</item>
+        <item name="android:colorAccent">@color/cor_padrao_bar</item>
+        <item name="android:colorBackground">@color/corfundo</item>
+        <item name="colorAccent">@color/cor_padrao_bar</item>
+        <!--<item name="android:textColorPrimary">@color/corDasNav</item>-->
+        <item name="android:colorButtonNormal">@color/cor_padrao_bar</item>
+        <item name="android:navigationBarColor">@color/cor_padrao_bar</item>
+        <item name="android:textColorSecondary">@color/corSecundaria</item>
+    </style>
+
+    <style name="oniP" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:statusBarColor">@color/NOVACOR</item>
+        <item name="android:navigationBarColor">@color/NOVACOR</item>
+        <item name="android:colorButtonNormal">@color/NOVACOR</item>
+        <!--<item name="android:textColorSecondary">@color/corDasNav</item>-->
+        <item name="android:textColorSecondaryInverse">@color/botao_volar</item>
+        <item name="colorPrimary">@color/NOVACOR</item>
+        <item name="colorPrimaryDark">@color/NOVACOR</item>
+        <item name="colorAccent">@color/ugi</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorPrimaryInverse">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="materialDesign" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorForeground">@android:color/black</item>
+        <item name="android:navigationBarColor">@color/ugi</item>
+        <item name="android:statusBarColor">@color/ugi</item>
+        <item name="colorPrimaryDark">@android:color/background_dark</item>
+        <item name="colorPrimary">@color/NOVACOR</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="colorAccent">@android:color/black</item>
+        <item name="android:textColorPrimaryInverse">@android:color/background_light</item>
+        <item name="android:textColorSecondary">@android:color/black</item>
+    </style>
+
+    <style name="oniP2.0" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/NOVACOR</item>
+        <item name="colorPrimaryDark">@color/NOVACOR</item>
+        <item name="colorAccent">@color/corPrimariaCampo2</item>
+        <item name="android:colorButtonNormal">@color/NOVACOR</item>
+        <item name="android:navigationBarColor">@color/NOVACOR</item>
+    </style>
+    
+    <style name="DialogStyle" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+        <item name="android:colorAccent">@android:color/white</item>
+        <item name="android:statusBarColor">@color/NOVACOR</item>
+        <item name="android:colorPrimary">@color/NOVACOR</item>
+        <item name="android:colorBackground">@color/corfundo</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:colorForeground">@android:color/white</item>
+        <item name="android:colorPrimaryDark">@color/corDasNav</item>
+        <item name="android:textColorPrimary">@android:color/background_dark</item>
+    </style>
+
+    <style name="styleSpinner" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+   
+</resources>

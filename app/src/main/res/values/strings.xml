@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">CadernetaDig</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="nome">Nome</string>
+    <string name="guarda_infoma_es">Guarda Infomações</string>
+    <string name="quantidade_total">Quantidade Total</string>
+    <string name="asteristico">*</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="cadastrarHq">Cadastrar HQ</string>
+    <string name="capitulos">Capitulos</string>
+    <string name="capTotal">cap.Total</string>
+    <string name="capAtual">cap.Atual</string>
+    <string name="ordenarString">Nome</string>
+    <string name="ordenarCapitulo">Capitulo</string>
+    <string name="ordenarQuantidade">Quantidade</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_teste">teste</string>
+    <string name="capacitdade">capacitdade</string>
+    <string name="capitulo">Capitulo</string>
+    <string name="quantidade">Quantidade</string>
+    <string name="menu">menu</string>
+    <string name="site">Site:</string>
+    <string name="editar">Editar</string>
+    <string name="informar">Informação</string>
+    <string name="deletar">Deletar</string>
+    <string-array name="opcaolista">
+        <item>manga</item>
+        <item>anime</item>
+    </string-array>
+    <string name="title_activity_spinner">SpinnerActivity</string>
+    <string name="menuRemove">remover</string>
+    <string name="menuEditar">editar</string>
+    <string name="todo">TODO</string>
+    <string name="viewMenu">viewMenu</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="anime">anime</string>
+    <string name="mangá">mangá</string>
+    <string name="total">Total</string>
+    <string name="atual">Atual</string>
+    <string name="manga">Mangá</string>
+    <string name="menorQ">-</string>
+    <string name="maiorC">+</string>
+    <string name="menorC">-</string>
+    <string name="maiorQ">+</string>
+    <string name="maiorS">+</string>
+    <string name="menorS">-</string>
+    <string name="maiorEpA">+</string>
+    <string name="menorEpA">-</string>
+    <string name="maiorEpT">+</string>
+    <string name="menorEpT">-</string>
+    <string name="episodioAtual">Ep.Atual</string>
+    <string name="episodeTotal">Ep.Total</string>
+    <string name="episodioAtualInfo">Episódio Atual:</string>
+    <string name="episodeTotalInfo">Episódio Total:</string>
+    <string name="cadastrar_anime">Cadastrar Anime</string>
+    <string name="cadastrar_manga">Cadastrar Mangá</string>
+    <string name="season">Temporada:</string>
+    <string name="editar_hq">Editar HQ</string>
+    <string name="editar_manga_text">Editar Mangá</string>
+    <string name="editar_anime_text">Editar Anime</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="textnome">TextNome</string>
+    <string name="capitulo_atual">Capitulo Atual:</string>
+    <string name="textatual">TextAtual</string>
+    <string name="capitulo_total">Capitulo Total:</string>
+    <string name="texttotal">TextTotal</string>
+    <string name="textsite">TextSite</string>
+    <string name="hq">HQ</string>
+    <string name="description">descript</string>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/tela_fundo"
+    android:foregroundGravity="center"
+    tools:context=".Fragments.editMangaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/NOVACOR"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/oniP" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/editar_manga_text"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_anchor="@id/textView2"
+        app:layout_anchorGravity="center" />
+
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="34dp"
+        android:layout_height="55dp"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/ic_arrow_back_black_24dp"
+        android:gravity="center"
+        android:text=""
+        app:layout_anchor="@id/textView2"
+        app:layout_anchorGravity="left|center"
+        android:drawableEnd="@drawable/ic_arrow_back_black_24dp" />
+
+    <Button
+        android:id="@+id/btn_saved"
+        android:layout_width="34dp"
+        android:layout_height="55dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_save_black_24dp"
+        android:gravity="center"
+        android:text=""
+        app:layout_anchor="@+id/textView2"
+        app:layout_anchorGravity="right|center"
+        android:drawableStart="@drawable/ic_save_black_24dp" />
+
+    <include
+        layout="@layout/contenteditmanga"
+        app:layout_anchor="@+id/textView2"
+        app:layout_anchorGravity="bottom|center" />
+
+</android.support.design.widget.CoordinatorLayout>

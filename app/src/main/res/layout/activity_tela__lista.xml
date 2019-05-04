@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraiLista"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ugi"
+    tools:context=".Activity.Tela_ListaActivity">
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/myTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/NOVACOR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabManga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/manga" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabAnime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anime" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabHq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hq" />
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerLista"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myTabLayout"
+        tools:ignore="MissingConstraints" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="#FF5722"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_add_black_24dp"
+        tools:ignore="VectorDrawableCompat"
+        tools:targetApi="lollipop" />
+
+</android.support.constraint.ConstraintLayout>

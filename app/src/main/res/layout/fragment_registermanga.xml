@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tela_fundo"
+    tools:context=".Fragments.registerMangaFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mytoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/NOVACOR"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/oniP" />
+
+    <Button
+        android:id="@+id/btn_voltarAnime"
+        android:layout_width="34dp"
+        android:layout_height="55dp"
+        android:background="@android:color/transparent"
+        android:drawableEnd="@drawable/ic_arrow_back_black_24dp"
+        android:drawableRight="@drawable/ic_arrow_back_black_24dp"
+        android:gravity="center"
+        android:text=""
+        app:layout_anchor="@+id/mytoolbar"
+        app:layout_anchorGravity="left|center" />
+
+    <Button
+        android:id="@+id/addManga"
+        android:layout_width="34dp"
+        android:layout_height="55dp"
+        android:layout_margin="0dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_save_black_24dp"
+        android:drawableLeft="@drawable/ic_save_black_24dp"
+        android:text=""
+        app:layout_anchor="@+id/mytoolbar"
+        app:layout_anchorGravity="right|center" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/cadastrar_manga"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textColorLink="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_anchor="@+id/mytoolbar"
+        app:layout_anchorGravity="center" />
+
+
+    <include
+        layout="@layout/contentregistermanga"
+        app:layout_anchor="@+id/mytoolbar"
+        app:layout_anchorGravity="bottom|center" />
+
+
+</android.support.design.widget.CoordinatorLayout>

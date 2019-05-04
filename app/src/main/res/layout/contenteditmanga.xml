@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenteditmanga"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/fragment_edit_manga">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:padding="3dp"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nome"
+            android:inputType="text"
+            android:shadowColor="@android:color/background_dark"
+            android:textColor="@android:color/background_dark"
+            android:textColorHighlight="@android:color/background_dark"
+            android:textColorHint="@android:color/background_dark"
+            android:textColorLink="@android:color/background_dark"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/editCapitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:padding="3dp"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintEnd_toStartOf="@+id/btn_maiorC"
+        app:layout_constraintStart_toEndOf="@+id/btn_menorC"
+        app:layout_constraintTop_toBottomOf="@+id/textInputNome">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/capitulo"
+            android:inputType="numberDecimal"
+            android:shadowColor="@android:color/background_dark"
+            android:textColor="@android:color/background_dark"
+            android:textColorHighlight="@android:color/background_dark"
+            android:textColorHint="@android:color/background_dark"
+            android:textColorLink="@android:color/background_dark"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_menorC"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/menorC"
+        android:textAllCaps="true"
+        android:textColor="@color/textoBotao"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputNome" />
+
+    <Button
+        android:id="@+id/btn_maiorC"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/maiorC"
+        android:textAllCaps="true"
+        android:textColor="@color/textoBotao"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputNome" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/editQuantidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:padding="3dp"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintEnd_toStartOf="@+id/btn_maiorQ"
+        app:layout_constraintStart_toEndOf="@+id/btn_menorQ"
+        app:layout_constraintTop_toBottomOf="@+id/editCapitulo">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/quantidade"
+            android:inputType="numberDecimal"
+            android:shadowColor="@android:color/background_dark"
+            android:textColor="@android:color/background_dark"
+            android:textColorHighlight="@android:color/background_dark"
+            android:textColorHint="@android:color/background_dark"
+            android:textColorLink="@android:color/background_dark"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_menorQ"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:text="@string/menorQ"
+        android:textAllCaps="true"
+        android:textColor="@color/textoBotao"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCapitulo" />
+
+    <Button
+        android:id="@+id/btn_maiorQ"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/maiorQ"
+        android:textAllCaps="true"
+        android:textColor="@color/textoBotao"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCapitulo" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputSite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:padding="3dp"
+        android:textColorHint="@android:color/background_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editQuantidade"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/site"
+            android:inputType="textEmailAddress"
+            android:shadowColor="@android:color/background_dark"
+            android:textColor="@android:color/background_dark"
+            android:textColorHighlight="@android:color/background_dark"
+            android:textColorHint="@android:color/background_dark"
+            android:textColorLink="@android:color/background_dark"
+            android:textSize="16sp" />
+    </android.support.design.widget.TextInputLayout>
+
+</android.support.constraint.ConstraintLayout>
