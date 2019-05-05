@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -77,7 +78,7 @@ public class registerAnimeFragment extends Fragment implements verificarCondicoe
         spinner.setAdapter(adapter);
         textoNome = view.findViewById(R.id.textoNome);
         textoEpisodioAtual = view.findViewById(R.id.textoEpisodioAtual);
-        textoEpisodioTotal = view.findViewById(R.id.textoEpisodioAtual);
+        textoEpisodioTotal = view.findViewById(R.id.textoEpisodioTotal);
         textoSite = view.findViewById(R.id.textoSite);
 
     }
@@ -163,6 +164,7 @@ public class registerAnimeFragment extends Fragment implements verificarCondicoe
 
                     if (valorMaior && nomeEquals) {
                         Anime novo = new Anime(nome, ep_Atual, ep_Total, site, season);
+                        Log.i("anime","refatorando = "+novo.getAtual()+" = "+novo.getTotal());
 
                         dbAnime.addGeek(novo);
                         animes = dbAnime.allDataList();
